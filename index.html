@@ -28,11 +28,11 @@
  
     <!-- BARRA DE PROGRESO INTERACTIVA -->
     <div class="progreso" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-label="Progreso del registro">
-      <div class="punto activo" data-punto="1"><span class="punto-label">llegar</span></div>
+      <div class="punto activo" data-punto="1"><span class="punto-label">Autorización de uso de imagen</span></div>
       <div class="linea"></div>
-      <div class="punto" data-punto="2"><span class="punto-label">contar</span></div>
+      <div class="punto" data-punto="2"><span class="punto-label">Biografía</span></div>
       <div class="linea"></div>
-      <div class="punto" data-punto="3"><span class="punto-label">sentir</span></div>
+      <div class="punto" data-punto="3"><span class="punto-label">Archivo</span></div>
     </div>
  
     <!-- GRAN FORMULARIO ÚNICO -->
@@ -43,7 +43,7 @@
       <!-- ========================================== -->
       <section class="hoja activa" id="hoja-1" aria-labelledby="titulo-1">
         <p class="eyebrow">oráculo de la memoria</p>
-        <h2 id="titulo-1">Este es un espacio para honrar, visibilizar y registrar las historias de vida de las mujeres y diversidades luchadoras de nuestros territorios.</h2>
+        <h2 id="titulo-1">Este es un espacio para honrar, visibilizar y registrar las historias de vida de las mujeres y diversidades luchadorxs de nuestros territorios.</h2>
  
         <p class="texto-intro">
           A través de este formulario comunitario recopilamos las biografías, frases y fotografías que darán vida al mazo de cartas y cuadernillo pedagógico del proyecto.
@@ -52,9 +52,8 @@
         <div class="tarjeta-info">
           <h2>Carta de Autorización de Uso de Imagen e Historia</h2>
           <p class="texto-secundario">
-            La finalidad de este registro es la difusión comunitaria y pedagógica, sin fines de lucro.
-            El oráculo estará disponible en redes para su descarga libre, por lo que cualquier persona podrá acceder a él.
-            Nos comprometemos a respetar la veracidad histórica de la información y a entregar un ejemplar virtual del resultado a las familias o instituciones participantes.
+            El proyecto "Oráculo de la Memoria", un oráculo de cartas ilustradas producido por Viajando y Acompañando (VIA) que busca honrar y visibilizar la memoria de mujeres y diversidades luchadoras, activistas y defensoras de derechos que han marcado la historia social de Honduras. El proyecto tiene como finalidad la creación de un mazo de cartas, un cuadernillo biográfico para el uso pedagógico del mismo y una campaña de difusión con fines de visibilizar y generar herramientas pedagógicas lúdicas en nuestros espacios de lucha.
+
           </p>
         </div>
  
@@ -62,7 +61,7 @@
           <legend style="font-weight: bold; margin-bottom: 15px;">Datos de quien autoriza el registro:</legend>
  
           <label class="campo">
-            <span class="campo-label">Tu Nombre Completo</span>
+            <span class="campo-label">Tu Nombre Completo y Pronombre</span>
             <input type="text" id="autorizaNombre" required placeholder="Ej: María López">
           </label>
  
@@ -86,14 +85,15 @@
           <label class="checkbox-consentimiento">
             <input type="checkbox" id="consentimiento-legal" required>
             <span>
-              <strong>Declaro haber leído esta carta y autorizo el uso de su imagen, nombre e historia de vida</strong> para los fines educativos y de memoria aquí descritos.
+              <strong>Declaro haber leído esta carta y autorizo el uso de su imagen, nombre e historia de vida</strong> para los fines educativos y de memoria aquí descritos. Para cualquier consulta o para ejercer el derecho de revocación de esta autorización, puede contactarnos a través de <strong> via.paratodxs@proton.me y +504 9790-4092 </strong>
+
             </span>
           </label>
         </div>
  
         <div class="nav-hoja">
           <span class="nota-nav" id="nota-consentimiento">Llena los campos y marca la casilla para continuar</span>
-          <button type="button" class="btn btn-primario" id="btn-a-hoja-2" disabled>Empezar a contar →</button>
+          <button type="button" class="btn btn-primario" id="btn-a-hoja-2" disabled>Biografía →</button>
         </div>
       </section>
  
@@ -102,14 +102,14 @@
       <!-- HOJA 2 — CONTAR (BIOGRAFÍA DE LA LUCHADORA)-->
       <!-- ========================================== -->
       <section class="hoja" id="hoja-2" aria-labelledby="titulo-2">
-        <p class="eyebrow">contar</p>
+        <p class="eyebrow">Biografía</p>
         <h1 id="titulo-2">La historia, caminar y legado</h1>
  
         <fieldset class="grupo-preguntas">
           <legend>Biografía Esencial</legend>
  
           <label class="campo">
-            <span class="campo-label">Nombre Completo de la defensora/luchadora</span>
+            <span class="campo-label">Nombre Completo de la defensora/luchadora homenajeada</span>
             <input type="text" id="nombreCompleto" required placeholder="Ej: Berta Cáceres">
           </label>
  
@@ -119,39 +119,39 @@
           </label>
  
           <label class="campo">
-            <span class="campo-label">Región / Territorio / Provincia</span>
+            <span class="campo-label">Región / Territorio / Departamento</span>
             <input type="text" id="region" required placeholder="Ej: Intibucá, Honduras">
           </label>
  
           <label class="campo">
             <span class="campo-label">Tipo de lucha o ámbito de defensa</span>
-            <input type="text" id="tipoLucha" required placeholder="Ej: Defensa del territorio, ambiental, feminismo, memoria...">
+            <input type="text" id="tipoLucha" required placeholder="Ej: Defensa del territorio, ambiental, feminismo, cultural, memoria...">
           </label>
  
           <label class="campo">
-            <span class="campo-label">Hecho central de su lucha (Su historia)</span>
+            <span class="campo-label">Hecho central de su lucha (Su historia contada en sus palabras o con un enlace a articulo publicado)</span>
             <textarea id="hechoCentral" rows="5" required placeholder="Describe los hitos esenciales de su caminar, sus batallas y su organización..."></textarea>
           </label>
  
           <label class="campo">
-            <span class="campo-label">Legado e impacto comunitario</span>
+            <span class="campo-label">Legado e impacto comunitario (puede trabajar con sus propias palabras o articulo publicado)</span>
             <textarea id="legadoImpacto" rows="4" required placeholder="¿Qué huella dejó o mantiene viva en el territorio y en la comunidad?"></textarea>
           </label>
  
           <label class="campo">
-            <span class="campo-label">Frase o reflexión icónica</span>
+            <span class="campo-label">Frase o reflexión icónica (No obligatoria)</span>
             <input type="text" id="fraseReflexion" required placeholder="Una frase potente de ella que la represente en el mazo">
           </label>
  
           <label class="campo">
-            <span class="campo-label">¿Qué te gustaría que se supiera profundamente de ella?</span>
+            <span class="campo-label">¿Qué te gustaría que se supiera profundamente de su/tu trabajo?</span>
             <textarea id="queSeSepara" rows="3" required placeholder="Detalles, sentires o memorias que merecen ser visibilizados con fuerza..."></textarea>
           </label>
         </fieldset>
  
         <div class="nav-hoja">
           <button type="button" class="btn btn-secundario" id="btn-a-hoja-1-desde-2">← Volver</button>
-          <button type="button" class="btn btn-primario" id="btn-a-hoja-3">Continuar a sentir →</button>
+          <button type="button" class="btn btn-primario" id="btn-a-hoja-3">Continuar a Archivo →</button>
         </div>
       </section>
  
@@ -164,14 +164,14 @@
         <h1 id="titulo-3">Archivo de memoria visual</h1>
  
         <p class="texto-intro">
-          Para finalizar, añade la fotografía de la defensora. Esta imagen servirá como referencia e inspiración directa para el equipo de ilustración que dará vida al oráculo.
+          Para finalizar, añade tu o la fotografía de la defensora. Esta imagen servirá como referencia e inspiración directa para el equipo de ilustración que dará vida al oráculo.
         </p>
  
         <fieldset class="grupo-preguntas">
           <legend>Carga de Imagen de Referencia</legend>
  
           <label class="campo">
-            <span class="campo-label">Fotografía de la defensora o elemento simbólico</span>
+            <span class="campo-label">Fotografía de la defensora</span>
             <input type="file" id="inputFoto" accept="image/*" required>
             <small style="display: block; margin-top: 8px; color: #666;">Formatos permitidos: JPG, PNG. Intenta que sea lo más clara posible.</small>
           </label>
@@ -198,7 +198,7 @@
       <p class="eyebrow">¡completado!</p>
       <h1 id="titulo-final">La memoria colectiva se ha expandido.</h1>
       <p class="texto-intro">
-        La historia de la defensora y su registro de autorización legal han sido guardados y protegidos con éxito en la base de datos segura.
+        La historia de la defensora y su registro de autorización legal han sido guardados y protegidos con éxito en la base de datos segura de Viajando y Acompañando (VIA).
       </p>
       <div class="tarjeta-info">
         <p style="margin: 0; text-align: center; font-weight: bold;">
@@ -214,7 +214,7 @@
  
   <!-- FOOTER -->
   <footer id="site-footer">
-    <h3>Proyecto Oráculo de Luchadoras · Código Libre y Sustentable</h3>
+    <h3>Proyecto Oráculo de Luchadoras · Código Libre y Sustentable - (VIA)</h3>
   </footer>
  
 </body>
