@@ -1,7 +1,7 @@
 /* ==========================================================================
    CONFIGURACIÓN PRINCIPAL (ORÁCULO DE LUCHADORAS)
    ========================================================================== */
-const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyDvhzMvr3JkslXdFtddpXABdddtMInGVra9chTDnJ2nx76oeDX--2ji0B6zHZFJJZV/exec";
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyJMSdkDtkXplUEPtrLe8yNKS1ZmbvzDbwZfZUCF2ZtgDUn3glXwVszQfeahjXbvSKS/exec";
 const ENCRYPTION_KEY = "TuClaveSecretaDelOraculo";
  
 let hojaActual = 1;
