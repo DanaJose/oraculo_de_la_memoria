@@ -19,7 +19,7 @@ body {
   margin: 0;
   /* Capa de tinte oscuro sobre tu imagen de fondo para mantener la legibilidad */
   background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    var(--tinta) url('img/fondo_1.svg') no-repeat center center fixed; /* <-- Cambia 'fondo.jpg' por el nombre de tu imagen (jpg, png, svg) */
+    var(--tinta) url('img/fondix.svg') no-repeat center center fixed; /* <-- Cambia 'fondo.jpg' por el nombre de tu imagen (jpg, png, svg) */
   background-size: cover;
   color: var(--arena);
   font-family: 'Work Sans', sans-serif;
