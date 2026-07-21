@@ -5,27 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro · Oráculo de Luchadoras</title>
   <link rel="stylesheet" href="style.css">
-  
+ 
   <!-- LIBRERÍA DE SOFTWARE LIBRE (CryptoJS) PARA EL CIFRADO EN EL NAVEGADOR -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
-
+ 
 <body>
-
+ 
   <!-- BARRA SUPERIOR INSTITUCIONAL -->
   <header id="site-header">
     <img src="img/logo_1.svg" alt="Logo Oráculo de Luchadoras" id="header-logo" height="100" width="auto">
     <span id="header-texto">Registro de biografías y uso de memoria comunitaria para el Oráculo de Luchadoras</span>
   </header>
-
+ 
   <!-- EFECTOS VISUALES SUSTENTABLES (HALOS DE RESPIRACIÓN) -->
   <div class="fondo-respiracion" aria-hidden="true">
     <div class="halo halo-1"></div>
     <div class="halo halo-2"></div>
   </div>
-
+ 
   <main class="contenedor">
-
+ 
     <!-- BARRA DE PROGRESO INTERACTIVA -->
     <div class="progreso" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" aria-label="Progreso del registro">
       <div class="punto activo" data-punto="1"><span class="punto-label">llegar</span></div>
@@ -34,54 +34,54 @@
       <div class="linea"></div>
       <div class="punto" data-punto="3"><span class="punto-label">sentir</span></div>
     </div>
-
+ 
     <!-- GRAN FORMULARIO ÚNICO -->
     <form id="formularioOraculo">
-
+ 
       <!-- ========================================== -->
       <!-- HOJA 1 — LLEGADA Y CONSENTIMIENTO LEGAL    -->
       <!-- ========================================== -->
       <section class="hoja activa" id="hoja-1" aria-labelledby="titulo-1">
         <p class="eyebrow">oráculo de la memoria</p>
         <h2 id="titulo-1">Este es un espacio para honrar, visibilizar y registrar las historias de vida de las mujeres y diversidades luchadoras de nuestros territorios.</h2>
-        
+ 
         <p class="texto-intro">
           A través de este formulario comunitario recopilamos las biografías, frases y fotografías que darán vida al mazo de cartas y cuadernillo pedagógico del proyecto.
         </p>
-
+ 
         <div class="tarjeta-info">
           <h2>Carta de Autorización de Uso de Imagen e Historia</h2>
           <p class="texto-secundario">
-            La finalidad de este registro es la difusión comunitaria y pedagógica, sin fines de lucro. 
-            El oráculo estará disponible en redes para su descarga libre, por lo que cualquier persona podrá acceder a él. 
+            La finalidad de este registro es la difusión comunitaria y pedagógica, sin fines de lucro.
+            El oráculo estará disponible en redes para su descarga libre, por lo que cualquier persona podrá acceder a él.
             Nos comprometemos a respetar la veracidad histórica de la información y a entregar un ejemplar virtual del resultado a las familias o instituciones participantes.
           </p>
         </div>
-
+ 
         <fieldset class="grupo-preguntas" style="border: none; padding: 0; margin-top: 20px;">
           <legend style="font-weight: bold; margin-bottom: 15px;">Datos de quien autoriza el registro:</legend>
-
+ 
           <label class="campo">
             <span class="campo-label">Tu Nombre Completo</span>
             <input type="text" id="autorizaNombre" required placeholder="Ej: María López">
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">Documento de Identidad (ID / Pasaporte) — <em>Se guardará cifrado 🔒</em></span>
             <input type="text" id="autorizaID" required placeholder="Para respaldo legal del consentimiento">
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">Relación o parentesco con la defensora homenajeada</span>
             <input type="text" id="autorizaRelacion" required placeholder="Ej: Ella misma, Hija, Compañera de organización, Institución...">
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">Tu Contacto (Correo electrónico o Teléfono) — <em>Se guardará cifrado 🔒</em></span>
             <input type="text" id="autorizaContacto" required placeholder="Ej: via.paratodxs@proton.me o +504 XXXX-XXXX">
           </label>
         </fieldset>
-
+ 
         <div class="tarjeta-consentimiento" style="margin-top: 20px;">
           <label class="checkbox-consentimiento">
             <input type="checkbox" id="consentimiento-legal" required>
@@ -90,107 +90,107 @@
             </span>
           </label>
         </div>
-
+ 
         <div class="nav-hoja">
           <span class="nota-nav" id="nota-consentimiento">Llena los campos y marca la casilla para continuar</span>
           <button type="button" class="btn btn-primario" id="btn-a-hoja-2" disabled>Empezar a contar →</button>
         </div>
       </section>
-
-
+ 
+ 
       <!-- ========================================== -->
       <!-- HOJA 2 — CONTAR (BIOGRAFÍA DE LA LUCHADORA)-->
       <!-- ========================================== -->
       <section class="hoja" id="hoja-2" aria-labelledby="titulo-2">
         <p class="eyebrow">contar</p>
         <h1 id="titulo-2">La historia, caminar y legado</h1>
-
+ 
         <fieldset class="grupo-preguntas">
           <legend>Biografía Esencial</legend>
-
+ 
           <label class="campo">
             <span class="campo-label">Nombre Completo de la defensora/luchadora</span>
             <input type="text" id="nombreCompleto" required placeholder="Ej: Berta Cáceres">
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">Año o fecha de nacimiento</span>
             <input type="text" id="nacimiento" required placeholder="Ej: 1971 o 4 de marzo de 1971">
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">Región / Territorio / Provincia</span>
             <input type="text" id="region" required placeholder="Ej: Intibucá, Honduras">
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">Tipo de lucha o ámbito de defensa</span>
             <input type="text" id="tipoLucha" required placeholder="Ej: Defensa del territorio, ambiental, feminismo, memoria...">
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">Hecho central de su lucha (Su historia)</span>
             <textarea id="hechoCentral" rows="5" required placeholder="Describe los hitos esenciales de su caminar, sus batallas y su organización..."></textarea>
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">Legado e impacto comunitario</span>
             <textarea id="legadoImpacto" rows="4" required placeholder="¿Qué huella dejó o mantiene viva en el territorio y en la comunidad?"></textarea>
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">Frase o reflexión icónica</span>
             <input type="text" id="fraseReflexion" required placeholder="Una frase potente de ella que la represente en el mazo">
           </label>
-
+ 
           <label class="campo">
             <span class="campo-label">¿Qué te gustaría que se supiera profundamente de ella?</span>
             <textarea id="queSeSepara" rows="3" required placeholder="Detalles, sentires o memorias que merecen ser visibilizados con fuerza..."></textarea>
           </label>
         </fieldset>
-
+ 
         <div class="nav-hoja">
           <button type="button" class="btn btn-secundario" id="btn-a-hoja-1-desde-2">← Volver</button>
           <button type="button" class="btn btn-primario" id="btn-a-hoja-3">Continuar a sentir →</button>
         </div>
       </section>
-
-
+ 
+ 
       <!-- ========================================== -->
       <!-- HOJA 3 — SENTIR / COMPARTIR (FOTO Y ENVÍO) -->
       <!-- ========================================== -->
       <section class="hoja" id="hoja-3" aria-labelledby="titulo-3">
         <p class="eyebrow">sentir e inmortalizar</p>
         <h1 id="titulo-3">Archivo de memoria visual</h1>
-        
+ 
         <p class="texto-intro">
           Para finalizar, añade la fotografía de la defensora. Esta imagen servirá como referencia e inspiración directa para el equipo de ilustración que dará vida al oráculo.
         </p>
-
+ 
         <fieldset class="grupo-preguntas">
           <legend>Carga de Imagen de Referencia</legend>
-          
+ 
           <label class="campo">
             <span class="campo-label">Fotografía de la defensora o elemento simbólico</span>
             <input type="file" id="inputFoto" accept="image/*" required>
             <small style="display: block; margin-top: 8px; color: #666;">Formatos permitidos: JPG, PNG. Intenta que sea lo más clara posible.</small>
           </label>
         </fieldset>
-
+ 
         <div class="tarjeta-info" style="border-left: 4px solid #4caf50; background: #f4faf4;">
           <p class="texto-secundario" style="margin: 0;">
             🔒 <strong>Envío Seguro Activado:</strong> Al presionar el botón inferior, tus datos de identidad y contacto pasarán por un proceso de cifrado criptográfico local antes de salir de esta página. Nadie en el trayecto podrá interceptar tu información privada.
           </p>
         </div>
-
+ 
         <div class="nav-hoja">
           <button type="button" class="btn btn-secundario" id="btn-a-hoja-2-desde-3">← Volver</button>
           <button type="submit" class="btn btn-primario" id="btn-finalizar">Enviar Historia de Forma Segura</button>
         </div>
       </section>
-
+ 
     </form>
-
+ 
     <!-- ========================================== -->
     <!-- HOJA FINAL — CONFIRMACIÓN Y ÉXITO         -->
     <!-- ========================================== -->
@@ -206,21 +206,16 @@
         </p>
       </div>
     </section>
-
+ 
   </main>
-
+ 
   <!-- ENLACE AL LOGIC SCRIPTER -->
   <script src="script.js"></script>
-
+ 
   <!-- FOOTER -->
   <footer id="site-footer">
     <h3>Proyecto Oráculo de Luchadoras · Código Libre y Sustentable</h3>
   </footer>
-  
-<!-- Biblioteca CryptoJS para la encriptación segura antes de enviar -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
-    
-    <!-- Tu lógica del formulario -->
-    <script src="script.js"></script>
-  </body>
+ 
+</body>
 </html>
